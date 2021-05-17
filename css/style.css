@@ -1,3 +1,14 @@
+html {
+    font-size: 16px;
+}
+
+div {
+    font-size: 2em;
+}
+
 h1 {
     color: #c300ff;
+    font-size: 3rem;
+    background-color: sandybrown;
+    width: 20%;
 }
