@@ -1,14 +1,41 @@
-html {
-    font-size: 16px;
-}
-
-div {
-    font-size: 2em;
-}
-
 h1 {
     color: #c300ff;
     font-size: 3rem;
     background-color: sandybrown;
-    width: 20%;
+    /*border: 9px dotted gray;   --maneira curta de escrever o mesmo código que representa as três linhas abaixo*/
+    border-width: 9px;
+    border-style: dotted;
+    border-color: gray;
+    width: 50%;
+}
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    text-align: center;
+    border: 3px solid black;
+    width: 50%;
+}    
+p {
+    background-color: black;
+    color: white;
+}
+span {
+    font-size: 40px;
+    font-family: 'Comic Sans MS';
+    font-style: italic;
+    color: yellowgreen;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+ul {
+    font-size: 50px;
+    list-style: square;
+}
+
+ol {
+    font-size: 50px;
+    list-style: upper-roman;
+    margin-left: 40px;
 }
