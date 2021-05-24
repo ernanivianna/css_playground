@@ -1,13 +1,3 @@
-h1 {
-    color: #c300ff;
-    font-size: 3rem;
-    background-color: sandybrown;
-    /*border: 9px dotted gray;   --maneira curta de escrever o mesmo código que representa as três linhas abaixo*/
-    border-width: 9px;
-    border-style: dotted;
-    border-color: gray;
-    width: 50%;
-}
 h2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
@@ -46,4 +36,16 @@ ol {
 
 #titulo-principal {
     margin-left: 5rem;
+}
+
+/*Explicando cascade e especificidade*/
+.titulo-pagina {
+    font-size: 5rem;
+    border: 5px solid red;
+    color: red;
+}
+
+.titulo {
+    border-style: dashed;
+    color: green;
 }
