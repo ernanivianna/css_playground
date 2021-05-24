@@ -39,13 +39,35 @@ ol {
 }
 
 /*Explicando cascade e especificidade*/
+
+/* 0-2-0 */
+.titulo.titulo-pagina {
+    color: purple;
+}
+
+/* 1-0-0 */
+#titulo-principal {
+    color: yellowgreen;
+}
+
+/* 0-1-0 */
 .titulo-pagina {
     font-size: 5rem;
     border: 5px solid red;
     color: red;
+    margin-left: 4rem;
 }
 
+/* 0-1-0 */
 .titulo {
     border-style: dashed;
     color: green;
+    margin-left: 0rem;
+}
+
+/* 0-0-1 */
+/* se tiver !important o peso ficará 1-0-0-0, ou seja, sobrescreverá tudo*/
+h1 {
+    color: blue;
+    /* color: blue !important; */
 }
