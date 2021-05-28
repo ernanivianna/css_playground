@@ -71,3 +71,53 @@ h1 {
     color: blue;
     /* color: blue !important; */
 }
+
+.titulo-generico {
+    font-size: 40px;
+    color: red;
+}
+
+.container-exemplo > .titulo-generico {
+    font-size: 80px;
+    color: green;
+}
+
+.meu-link {
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.meu-link:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+.meu-link:link {
+    color: green;
+}
+
+.meu-link:visited {
+    color: orangered;
+}
+
+.meu-link:active {
+    font-size: 80px;
+    color: purple;
+}
+
+.meu-link:focus {
+    font-size: 90px;
+    color: gray;
+}
+
+.meu-input {
+    background-color: gray;
+    font-size: 40px;
+    color: white;
+}
+
+.meu-input:focus {
+    background-color: white;
+    color: black;
+
+}
