@@ -10,14 +10,6 @@ p {
     background-color: black;
     color: white;
 }
-span {
-    font-size: 40px;
-    font-family: 'Comic Sans MS';
-    font-style: italic;
-    color: yellowgreen;
-    text-decoration: underline;
-    text-transform: uppercase;
-}
 
 ul {
     font-size: 50px;
@@ -136,6 +128,9 @@ h1 {
     border: 2px dashed purple;
     background-color: gray;
     margin-bottom: 20px;
+    display: inline-block;
+    font-size: 30px; 
+    min-width: 200px;
 }
 
 .menu-item:last-child {
@@ -153,4 +148,44 @@ h1 {
 .menu-item:nth-child(n + 2) {
     font-weight: bold;
     background-color: yellow;
+}
+.bloco-inicial {
+    font-size: 50px;
+    background-color: grey;
+    margin-bottom: 20px;
+    display: block; /*por padrão div é display block*/
+    width: 600px;
+}
+
+/* elementos importantes que são por defaut block
+<div>
+<h1, 2, 3, ...>
+*/
+
+.span-inicial {
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: yellowgreen;
+    text-decoration: underline;
+    text-transform: uppercase;
+    /*display: inline; -> por padrão div é display inline*/
+    display: inline-block;
+    width: 200px; /* ignorado por elemento inline, mas sim no inline-block */
+    height: 50px; /* ignorado por elemento inline, mas sim no inline-block */
+    margin-top: 50px; /* não é aplicada em elemento inline, sendo assim não muda nada*/
+    margin-left: 20px; /* propriedades de aplicação horizontal se aplicam em elementos inline */
+    background-color: green;
+}
+
+/* elementos importantes que são por defaut inline
+<span>
+<a >
+<strong>
+<em>
+*/
+
+.bloco-escondido {
+    display: none; /* esconde o elemento */
+    /* display: grid; /* grid */
+    /* display: flex; /* flexbox */
 }
