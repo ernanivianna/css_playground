@@ -2,18 +2,22 @@
     box-sizing: border-box;
 }
 
-h2 {
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+}
+
+/* h2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
     font-style: italic;
     text-align: center;
     border: 3px solid black;
     width: 50%;
-}    
-p {
-    background-color: black;
-    color: white;
-}
+}    */
 
 ul {
     font-size: 50px;
@@ -224,3 +228,110 @@ h1 {
     border-top: 10px solid green;
     border-bottom: 10px dashed red;
 }
+
+.wrapper {
+    /* Como este elemento é uma div, por padrão sempre é display=bock */
+    display: block;
+    font-size: 1.5rem;
+    background-color: #808080;
+    width: 30rem;
+    margin: 0 auto;
+}
+
+.wrapper p {
+    margin-top: 0;
+}
+
+.wrapper .imagem-principal {
+    float: left;
+    margin: 0 20px 10px 0;
+}
+
+/*.wrapper .paragrafo-clear {
+    clear: both; /* Usado para tirar o paragrafo do float e o texto seguir o fluxo */
+/*}*/
+
+.wrapper .imagem-direita {
+    float: right;
+}
+
+.wrapper::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.wrapper2 {
+    background-color: #faf87f;
+    font-size: 1.5rem;
+    width: 60rem;
+    margin: 20px auto;
+}
+
+.wrapper2::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.box-1 {
+    height: 200px;
+    width: 33%;
+}
+
+.red {
+    background-color: red;
+    float: right;
+}
+
+.blue {
+    background-color: blue;
+    float: right;
+}
+
+.green {
+    background-color: green;
+    float: right;
+}
+
+.wrapper-3 {
+    background-color: #faf87f;
+    font-size: 1.5rem;
+    width: 60rem;
+    margin: 20px auto;
+}
+
+.wrapper-3::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.servico {
+    width: 31%;
+    border: 1px solid blue;
+    float: left;
+    min-height: 200px;
+    margin: 0 1%;
+    padding: 1%;
+}
+
+.wrapper-4 {
+    border: 5px solid blue;
+    padding: 40px;
+    position: relative; 
+}
+
+.filho {
+    /*
+    position: relative -> em relação ao parent
+    position: absolute -> em relação ao topo da tela se o primeiro parent não tiver position:relative
+    position: fixed -> em relação ao topo da tela sempre e fica fixa na tela mesmo com scroll
+    */
+    position: fixed;
+    background-color: #ff0000;
+    padding: 20px;
+    bottom: 20px;
+}
+
+
