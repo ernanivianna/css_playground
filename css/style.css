@@ -328,10 +328,78 @@ h1 {
     position: absolute -> em relação ao topo da tela se o primeiro parent não tiver position:relative
     position: fixed -> em relação ao topo da tela sempre e fica fixa na tela mesmo com scroll
     */
-    position: fixed;
+
+    position: absolute;
     background-color: #ff0000;
     padding: 20px;
     bottom: 20px;
 }
 
+.wrapper-5 {
+    width: 50%;
+}
+
+.rizisable-img {
+    max-width: 100%;
+    height: auto;
+}
+/* media query utilizando conceito desktop first, ou seja, meu css é feito para desktop e depois regula tamanhos em relacção a telas menores*/
+@media (max-width: 1200px) {
+    body {
+        background-color: red;
+    }
+}
+@media (max-width: 1024px) {
+    body {
+        background-color: green;
+    }
+    .servico {
+        width: 40%;
+        margin-left: 5%;
+    }
+}
+@media (max-width: 768px) {
+    body {
+        background-color: blue;
+    }
+    .rizisable-img {
+        display: none;
+    }
+    .servico {
+        width: 100%;
+    }
+}
+@media (max-width: 480px) {
+    body {
+        background-color: yellow;
+    }
+}
+
+/* media query utilizando conceito mobile first, ou seja, meu css é feito para mobile e depois regula tamanhos em relacção a telas maiores
+
+@media (min-width: 767px) {
+    body {
+        background-color: green;
+    }
+    .servico {
+        width: 40%;
+        margin-left: 5%;
+    }
+}
+@media (min-width: 1023px) {
+    body {
+        background-color: blue;
+    }
+    .rizisable-img {
+        display: none;
+    }
+    .servico {
+        width: 100%;
+    }
+}
+@media (min-width: 1199px) {
+    body {
+        background-color: yellow;
+    }
+}*/
 
